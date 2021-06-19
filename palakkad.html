@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palakkad</title>
+    <link rel="stylesheet" href="CSS/plkd.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="plkd">
+          <h1>Palakkad</h1>
+          <p>Palakkad District, in the southeastern part of the former Malabar district, is one of the 14 districts of the South Indian state of Kerala. It is located right in the middle of the state. It is included in South Malabar region. Also, it is the largest district in Kerala since 2006.</p>
+          <img src="Images/Palakkad.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract">
+          <h1>Main Attractions</h1>
+          <h3>Nelliyampathy</h3>
+          <p>Nelliyampathy is a hill station within the Nelliyampathy Forest Reserve, in the southwest Indian state of Kerala. The road to it, which goes through the dense forests of the Western Ghats, is known for its many hairpin turns. To the west is Kesavan Para, a vantage point with views of nearby tea plantations. Farther west is the 19th-century Pothundi Dam. Northeast is the Seetharkundu Viewpoint, with waterfalls nearby.</p>
+          <img src="Images/Nelliyampathy.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract1">
+          <h3>Parambikulam Tiger Reserve</h3>
+          <p>Parambikulam Tiger Reserve, which also includes the erstwhile Parambikulam Wildlife Sanctuary, is a 391 square kilometres protected area in Kollengode Block, Chittur taluk in Palakkad district of Kerala state, South India. The wildlife sanctuary, which had an area of 285 square kilometres was established in 1973.</p>
+          <img src="Images/Parambikulam.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract2">
+        <h3>Malampuzha Dam</h3>
+        <p>Malampuzha Dam is one of the largest dams and reservoirs in Kerala,[2] located near Palakkad, in the state of Kerala in South India, built post independence by the then Madras state. Situated in the scenic hills of the Western Ghats in the background it is a combination of a masonry dam with a length of 1,849 metres and an earthen dam with a length of 220 metres making it the longest dam in the state.[3] The dam is 355 feet high and crosses the Malampuzha River, a tributary of Bharathappuzha, Kerala's second longest river. There is a network of two canal systems that serve the dam's reservoir of 42,090 hectares.</p>
+        <img src="Images/Malambuzha.jpg" width="245" height="273">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images/BG.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG4.jpg" style="width: 100%;">
+        </div>
+      </div>
+  
+      <footer>
+        <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+      </footer>
+  
+      <br>
+  
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>  
+
+  </body>
+</html>

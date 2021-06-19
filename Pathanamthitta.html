@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pathanamthitta</title>
+    <link rel="stylesheet" href="CSS/pta.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="pta">
+          <h1>Pathanamthitta</h1>
+          <p>Pathanamthitta is a municipality situated in the Central Travancore region in the state of Kerala, India, spread over an area of 23.50 km². It is the administrative capital of Pathanamthitta district. The town has a population of 37,538.</p>
+          <img src="Images/Pathanamthitta.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract">
+          <h1>Main Attractions</h1>
+          <h3>Perunthenaruvi Waterfalls</h3>
+          <p>Perunthenaruvi Waterfalls are waterfalls 36 km from Pathanamthitta in Pathanamthitta District, Central Travancore region, Kerala State, India. It is a popular tourist destination situated in Vechoochira Panchayat of Ranni taluk. The one shore of this waterfall is Kudamurutty and Vechoochira is the other.</p>
+          <img src="Images/Perunthenaruvi.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract1">
+          <h3>Gavi</h3>
+          <p>Gavi's evergreen forests are abundant with wildlife including the tiger, elephants, leopards, bears, Indian gaur, sambar, barking and mouse deers, lion tailed macaque, Nilgiri langur, Nilgiri marten, Malabar giant squirrel and more than 250 species of birds.</p>
+          <img src="Images/Gavi.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract2">
+        <h3>Konni Eco Tourism</h3>
+        <p>The lush green land has been prominent as a haven of wild elephants and as an elephant training centre. The large area of thick forest with wild animals made Konni to emerge as another tourist spot for safaris and trekking. In Kerala there are two elephant training centres, the other located at Kodanad. It is located in the Adoor revenue division and it is one of the major towns situated near it.</p>
+        <img src="Images/Konni.jpg" width="245" height="273">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images/BG.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG4.jpg" style="width: 100%;">
+        </div>
+      </div>
+  
+      <footer>
+        <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+      </footer>
+  
+      <br>
+  
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>  
+
+  </body>
+</html>

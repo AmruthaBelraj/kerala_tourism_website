@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alappuzha</title>
+    <link rel="stylesheet" href="CSS/alpy.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="alpy">
+          <h1>Alappuzha</h1>
+          <p>Alappuzha (or Alleppey) is a city on the Laccadive Sea in the southern Indian state of Kerala. It's best known for houseboat cruises along the rustic Kerala backwaters, a network of tranquil canals and lagoons. Alappuzha Beach is the site of the 19th-century Alappuzha Lighthouse. The city's Mullakkal Temple features a traditional design. Punnamada Lake's snake boat races are a well-known annual event.</p>
+          <img src="Images/Alappuzha.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract">
+          <h1>Main Attractions</h1>
+          <h3>Pathiramanal Island</h3>
+          <p>Pathiramanal is a small island in Muhamma panchayat of Alappuzha district. The name Pathiramanal means 'midnight sand'. The scenic beauty of both sides of the lake as well as that of the island is mind blowing. It is home to many rare varieties of migratory birds from different parts of the world.</p>
+          <img src="Images/Pathiramanal.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract1">
+          <h3>Marari Beach</h3>
+          <p>Mararikulam is connected by rail and has a railway station by the same name. It is also well connected by road. NH 66 passes through S.L.Puram, which is 5 km to the east of Mararikulam. Nearest airport is Cochin International Airport. It was rated as one of the worlds top five HAMMOCK BEACH by National Geographic survey.</p>
+          <img src="Images/Marari.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract2">
+        <h3>Kuttanad Backwaters</h3>
+        <p>One of the best places to visit in Alleppey is Kuttanad Backwaters. This isn’t a place, it’s a phenomenon. It is a spectacular lagoon, surrounded by the beauty of lakes, rivers, canals, misty mountains and ethereal landscapes.</p>
+        <img src="Images/Kuttanad.jpg" width="245" height="273">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images/BG.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG4.jpg" style="width: 100%;">
+        </div>
+      </div>
+  
+      <footer>
+        <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+      </footer>
+  
+      <br>
+  
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>  
+
+  </body>
+</html>

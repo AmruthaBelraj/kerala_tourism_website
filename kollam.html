@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kollam</title>
+    <link rel="stylesheet" href="CSS/kollam.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="kollam">
+          <h1>Kollam</h1>
+          <p>Kollam is a city in the state of Kerala, on India's Malabar Coast. It’s known as a trade hub and for its beaches, like lively Kollam and secluded Thirumullavaram. Sardar Vallabhbhai Patel Police Museum has artifacts tracing the history of the police force. Nearby, Ashtamudi Lake is a gateway to the Kerala backwaters, a network of waterways rich with vegetation. The striped 1902 Tangasseri Lighthouse has ocean views.</p>
+          <img src="Images/Kollam.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract">
+          <h1>Main Attractions</h1>
+          <h3>Jatayu Earth Center</h3>
+          <p>Jatayu Earth Center, also known as Jatayu Nature Park or Jatayu Rock, is a park and tourism centre at Chadayamangalam in Kollam district of Kerala. It stands at an altitude of 350m above the mean sea level. Jatayu Nature Park holds the distinction of having the world’s largest bird sculpture, which is of Jatayu.</p>
+          <img src="Images/Jatayu.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract1">
+          <h3>Tangasseri Lighthouse</h3>
+          <p>Tangasseri Lighthouse is situated at Tangasseri in Kollam city of the Indian state of Kerala. It is one of the two lighthouses in the Kollam Metropolitan Area and is maintained by the Cochin Directorate General of Lighthouses and Lightships.</p>
+          <img src="Images/Tangasseri.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract2">
+        <h3>Palaruvi Falls</h3>
+        <p>Palaruvi Falls is a waterfall located in Kollam district in the Indian state of Kerala. It is the 32nd highest waterfall in India. Palaruvi falls from a height of 300 feet and is situated at Aryankavu in the Kollam district of the south Indian state of Kerala.</p>
+        <img src="Images/Palaruvi.jpg" width="245" height="273">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images/BG.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG4.jpg" style="width: 100%;">
+        </div>
+      </div>
+  
+      <footer>
+        <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+      </footer>
+  
+      <br>
+  
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>  
+
+  </body>
+</html>

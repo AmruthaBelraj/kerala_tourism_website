@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Idukki</title>
+    <link rel="stylesheet" href="CSS/idukki.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="idukki">
+          <h1>Idukki</h1>
+          <p>Idukki district is a densely forested, mountainous region in the south Indian state of Kerala. In the north, Anamudi mountain towers over Eravikulam National Park, where the rare, blue Neelakurinji flower blooms every 12 years. Nearby, Munnar is a hill station known for its sprawling tea plantations and Tea Museum. Farther south is the vast, curved Idukki Dam and Periyar National Park, a tiger and elephant reserve.</p>
+          <img src="Images/Idukki.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract">
+          <h1>Main Attractions</h1>
+          <h3>Munnar</h3>
+          <p>Munnar is a town in the Western Ghats mountain range in India’s Kerala state. A hill station and former resort for the British Raj elite, it's surrounded by rolling hills dotted with tea plantations established in the late 19th century. Eravikulam National Park, a habitat for the endangered mountain goat Nilgiri tahr, is home to the Lakkam Waterfalls, hiking trails and 2,695m-tall Anamudi Peak.</p>
+          <img src="Images/Munnar.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract1">
+          <h3>Kulamavu Dam</h3>
+          <p>Located just about a kilometre from the Idukki city centre, the Hill View Park is set up approximately 350 feet from the Idukki dam. As the name suggests, Hill View Park is one such places in Idukki that offers spectacular views of the Cheruthoni and Idukki Dams.</p>
+          <img src="Images/Kulamavu.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract2">
+        <h3>Periyar National Park</h3>
+        <p>The Periyar National Park in Thekkady, Kerala, is one of the most bio-diverse regions in the world and the best-protected reserve area that one can lay eyes on in India. Famous for its gorgeousness, greenery and stillness, the park is the dwelling place of abundant significant species, including the royal tigers and majestic elephants apart from other reptiles, fishes and birds. This National Park is an amazing coming together of nature, adventure and beauty. A place which allows you the peace and serenity you so desire, an opportunity to be one with nature and just a normal sighting of a Tiger or two, Periyar National Park is full of beautiful sights and sounds.</p>
+        <img src="Images/Periyar.jpg" width="245" height="273">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images/BG.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG4.jpg" style="width: 100%;">
+        </div>
+      </div>
+  
+      <footer>
+        <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+      </footer>
+  
+      <br>
+  
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>  
+
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="CSS/signup.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+    <div class="text">God's Own Country</div>
+    <div class="intro">KERALA TOURISM</div>
+    <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="#">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+    <form action="#" class="signup">
+        <h1>Sign Up</h1>
+        <br>
+        <div class="cont">
+            <label>Email Id</label>
+            <br>
+            <input class="box" type="text" placeholder="Email Id">
+        </div>
+        <br>
+        <div class="cont">
+            <label>Username</label>
+            <br>
+            <input class="box" type="text" placeholder="Username">
+        </div>
+        <br>
+        <div class="cont">
+            <label>Password</label>
+            <br>
+            <input class="box" type="password" placeholder="Password">
+        </div>
+        <br>
+        <div class="cont">
+            <label>Repeat Password</label>
+            <br>
+            <input class="box" type="password" placeholder="Repeat Password">
+        </div>
+        <br>
+        <br>
+        <div>
+            <input id="signup-button" type="submit" value="Sign Up">
+        </div>
+    </form>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="Images/BG.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG2.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG3.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG1.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG4.jpg" style="width: 100%">
+      </div>
+    </div>
+
+    <footer>
+      <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+    </footer>
+
+    <br>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+    </script>
+
+  </body>
+</html>

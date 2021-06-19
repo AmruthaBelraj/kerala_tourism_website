@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kannur</title>
+    <link rel="stylesheet" href="CSS/kannur.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="kannur">
+          <h1>Kannur</h1>
+          <p>Kannur is a coastal city in the south Indian state of Kerala. It was once an ancient trading port. Enduring monuments such as 16th-century St. Angelo Fort, once occupied by European colonial forces, show the city’s significant role in the spice trade. Housed in a former palace, the Arakkal Museum highlights Kerala's one Muslim royal family. The palm-fringed sands of Payyambalam Beach run along Kannur’s western shore.</p>
+          <img src="Images/Kannur.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract">
+          <h1>Main Attractions</h1>
+          <h3>Muzhuppilangad Drive-In Beach</h3>
+          <p>This beach is the longest Drive-In Beach in Asia and is featured among the top 6 best beaches for driving in the world in BBC article for Autos. Muzhappilangad is the only Asian beach featured in the list. Even though Goa has many beautiful beaches, it does not have a Drive-in beach. It is considered as the longest drive-in beach in Asia.</p>
+          <img src="Images/Muzhuppilangad.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract1">
+          <h3>Palakkayam Thattu</h3>
+          <p>Palakkayam Thattu is one of the alluring places to visit in Kannur near the Western Ghats because of the verdant greenery and dizzying height of about 3350 feet above the sea level. It also happens to be one of the most visited hill stations in the state of Kerala. Populated by dense forests and several hillocks, the quaint hamlet is a favoured destination for avid trekkers.</p>
+          <img src="Images/Palakkayam.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract2">
+        <h3>Peralassery Sri Subramanya Temple</h3>
+        <p>The stepwell at Peralassery Sri Subramanya Temple is the largest of its kind in Kerala. It has been so beautifully made that it is hard for a visitor to resist admiring its architecture. The steps leading to the well are numerous, and they have been made in a geometrical star-shaped design. The stepwell resembles the many baoris (stepwells) found in parts of North and West India such as Delhi, Rajasthan and Gujarat. As per the local belief, the waters of Cauvery River mysteriously make their way to the stepwell on Thula Sankramam (Tula Sankranti–Libra Solstice), thus rendering the stepwell always equipped for the devotees to take a dip and offer oblations.</p>
+        <img src="Images/Peralassery.jpg" width="245" height="273">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images/BG.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG4.jpg" style="width: 100%;">
+        </div>
+      </div>
+  
+      <footer>
+        <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+      </footer>
+  
+      <br>
+  
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>  
+
+  </body>
+</html>

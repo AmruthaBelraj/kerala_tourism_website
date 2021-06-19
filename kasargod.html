@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kasargod</title>
+    <link rel="stylesheet" href="CSS/ksgd.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="ksgd">
+          <h1>Kasargod</h1>
+          <p>Kasaragod is a municipal town and administrative headquarters of Kasaragod district of Kerala state in India. Established in the year 1966, Kasaragod was the first municipal town in Kasaragod district.</p>
+          <img src="Images/Kasargod.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract">
+          <h1>Main Attractions</h1>
+          <h3>Bekal Fort</h3>
+          <p>Built almost 300 years ago, Bekal Fort is considered as one of the largest and most preserved forts in Kerala. Nestled in the lap of nature, Bekal Fort is a historic fort surrounded by a beautiful beach offering an enchanting view of Arabian Sea from its high observation tower where once the cannons were placed. The beautiful walkway, illuminated beach and the grand architecture of the Bekal Fort make this place a favourite among the masses. The fort was featured in the popular A R Rahman song ' Tu hi re'. Located at 65 kms away from Mangalore, Bekal Fort is a keyhole-shaped lofty structure that stands still against the rocky shores of sea amusing its visitors with its finesse. The whole purpose of erecting this structure by Shivappa Nayaka of Bednore in the year 1650 was pure of defence.</p>
+          <img src="Images/Bekal.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract1">
+          <h3>Ananthapura Lake Temple</h3>
+          <p>In the northern tip of Kerala lies the Ananthapura Lake Temple, the only lake temple in Kerala. The rectangular lake, supplied with regular spring water, hosts this magnificent temple.  It is considered the moolasthanam (original abode) of Lord Ananthapadmanabha, the deity of the famous Sree Padmanabhaswamy Temple in Thiruvananthapuram. This 9th-century temple situated 30 km from Bekal in Kasaragod district. The view of the hillocks from the temple is extremely famous. Babia, the vegetarian crocodile and temple guardian, is popular among all the visitors. The drive to the temple in itself is extremely peaceful and calming.</p>
+          <img src="Images/Ananthapura.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract2">
+        <h3>Malom</h3>
+        <p>Malom is a small town that lies lazily near the Western Ghats in Kasaragod district. Known as the ‘Coorg’ of Kerala, it is blessed with Nature’s bounty. The word ‘Malom’ comes from the Malayalam word Malakalude lokam (the world of hills). Malom can be developed into a bio-eco tourist centre given the fact that it offers possibilities for trekking, waterfalls, and adventure safari to the nearby hills.</p>
+        <img src="Images/Malom.jpg" width="245" height="273">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images/BG.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG4.jpg" style="width: 100%;">
+        </div>
+      </div>
+  
+      <footer>
+        <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+      </footer>
+  
+      <br>
+  
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>  
+
+  </body>
+</html>

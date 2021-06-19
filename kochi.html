@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ernakulam</title>
+    <link rel="stylesheet" href="CSS/kochi.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="kochi">
+          <h1>Ernakulam</h1>
+          <p>Ernakulam (also known as Cochin) is a city in southwest India's coastal Kerala state. It has been a port since 1341, when a flood carved out its harbor and opened it to Arab, Chinese and European merchants. Sites reflecting those influences include Fort Kochi, a settlement with tiled colonial bungalows and diverse houses of worship. Cantilevered Chinese fishing nets, typical of Kochi, have been in use for centuries.</p>
+          <img src="Images/Cochin.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract">
+          <h1>Main Attractions</h1>
+          <h3>Fort Kochi</h3>
+          <p>Fort Kochi is a seaside town in the south-western part of Main Kochi which is known for its old-world colonial charm. The place still holds on to every single cultural change it has gone through over the centuries. We can see the remnants of British rule all over the country. The tourists' flock hear all around the year to have a glimpse of how Portuguese or Dutch colonialism affected parts of our country.</p>
+          <img src="Images/Fort Kochi.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract1">
+          <h3>Bolgatty Palace</h3>
+          <p>Bolgatty Palace is located in Bolgatty Island of Kochi and is one of the oldest existing Dutch palaces that is situated outside Holland. It is an exquisite example of the Kochi style of architecture. Built-in 1744 by Dutch traders, it was later extended, and gardens were landscaped around it. Green gardens, azure skies and the virgin charms of Kerela are aplenty at the Bolgatty Palace.</p>
+          <img src="Images/Bolgatty.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract2">
+        <h3>Marine Drive</h3>
+        <p>Overlooking the serene backwaters of Kerala is Marine Drive, one of the most popular hangout spots in the city of Kochi. It is a picturesque promenade with a walkway of about three kilometres and is a fantastic place to spend some time leisurely, either in the company of loved ones or even some alone time.</p>
+        <img src="Images/Marine Drive.jpg" width="245" height="273">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images/BG.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG4.jpg" style="width: 100%;">
+        </div>
+      </div>
+  
+      <footer>
+        <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+      </footer>
+  
+      <br>
+  
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>  
+
+  </body>
+</html>

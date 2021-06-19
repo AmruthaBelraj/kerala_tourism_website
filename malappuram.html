@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Malappuram</title>
+    <link rel="stylesheet" href="CSS/mlprm.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="mlprm">
+          <h1>Malappuram</h1>
+          <p>Malappuram is a city in the Indian state of Kerala, spread over an area of 58.20 km². The first municipality in the district formed in 1969, Malappuram serves as the administrative headquarters of Malappuram district. Divided into 40 electoral wards, the city has a population density of 1,742 per square kilometre.</p>
+          <img src="Images/Malappuram.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract">
+          <h1>Main Attractions</h1>
+          <h3>Nilambur Teak Museum</h3>
+          <p>The museum, a two-storey building, is the world's first teak museum and is operated by the Kerala Forest Research Institute. The exhibits include comprehensive information on aspects of the use of teak in their exhibits and articles on the subject. The museum provides extensive information of value historically, artistically and scientifically.</p>
+          <img src="Images/Nilambur.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract1">
+          <h3>Nedumkayam</h3>
+          <p>Nedumkayam rainforest forms a part of the Nilgiri Biosphere Reserve and is one of the best places to visit in Malappuram.  One of the beautiful and dense forests in Kerala with a splendid variety of flora and fauna this area is ideal for trekking. A 3 hours trek will take you to Mundakadav waterfalls, one of the most beautiful ones in this region. On the way, you can see numerous elephants freely roaming. If you are lucky you also watch them playing in the waters of Chaliyar. Leave yourself to nature here and stroll around to watch new life sprouting here.</p>
+          <img src="Images/Nedumkayam.jpg" width="245" height="273">
+      </div>
+
+      <div class="attract2">
+        <h3>Kadalundi Bird Sanctuary</h3>
+        <p>The Kadalundi Bird Sanctuary lies at Balathiruthi Islands in Vallikkunnu Grama Panchayat of Malappuram district in Kerala, India. It spreads over a cluster of islands where the Kadalundipuzha River flows into the Arabian Sea. The Sanctuary hill is around 200 m above sea level.</p>
+        <img src="Images/Kadalundi.jpg" width="245" height="273">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="Images/BG.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+          <img src="Images/BG4.jpg" style="width: 100%;">
+        </div>
+      </div>
+  
+      <footer>
+        <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+      </footer>
+  
+      <br>
+  
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>  
+
+  </body>
+</html>

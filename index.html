@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kerala Tourism</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+        <div class="text">God's Own Country</div>
+        <div class="intro">KERALA TOURISM</div>
+        <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="#">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="paragraph">
+        <p id="Home">Kerala, a state in Southern India is known as a tropical paradise of waving palms and wide sandy beaches. It is a narrow strip of coastal territory that slopes down the Western Ghats in a cascade of lush green vegetation, and reaches to the Arabian sea. Kerala borders the states of Tamil Nadu to the east and Karnataka to the north. It is also known for its backwaters, mountains, coconuts, spices and art forms like Kathakali and Mohini Attam. It is the most literate state in India, and a land of diverse religions, where you can find Hindu temples, mosques, churches, and even synagogues. With world class tourist sporting options, ayurvedic spas and treatments, eco-tourism initiatives, a large number of visit options ranging from beautiful high altitude blue mountains to pristine rain forests to golden sun-sand beaches and an enormous range of accommodation, Kerala has much to offer the visitor.</p>
+      </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="Images/BG.jpg" style="width: 100%;">
+      </div>
+      <div class="mySlides">
+        <img src="Images/BG2.jpg" style="width: 100%;">
+      </div>
+      <div class="mySlides">
+        <img src="Images/BG3.jpg" style="width: 100%;">
+      </div>
+      <div class="mySlides">
+        <img src="Images/BG1.jpg" style="width: 100%;">
+      </div>
+      <div class="mySlides">
+        <img src="Images/BG4.jpg" style="width: 100%;">
+      </div>
+    </div>
+
+    <footer>
+      <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+    </footer>
+
+    <br>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+  </body>
+</html>
