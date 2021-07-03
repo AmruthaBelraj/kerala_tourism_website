@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+    <div class="text">God's Own Country</div>
+    <div class="intro">KERALA TOURISM</div>
+    <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="#">Login</a>
+      </div>
+
+    <div class="container">
+    <form action="index.html" class="form" id="form">
+        <h1>Login</h1>
+        <br>
+        <div class="form-control">
+            <label>Username</label>
+            <input id="username" type="text" placeholder="Username">
+            <small>Error message</small>
+        </div>
+        
+        <div class="form-control">
+            <label>Password</label>
+            <input id="password" type="password" placeholder="Password">
+            <small>Error message</small>
+        </div>
+        <br>
+        <button><a href="index.html">Sign Up</a></button>
+        <br>
+        <div class="login-miscel">
+          <a href="#">Forgot Password?</a>
+        </div>
+        <div class="login-misc">
+            <h5>Need an Account?</h5>
+            <a href="signup.html">Sign Up</a>
+        </div>
+
+    </form>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="Images/BG.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG2.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG3.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG1.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG4.jpg" style="width: 100%">
+      </div>
+    </div>
+
+    <footer>
+      <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+    </footer>
+
+    <br>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+
+      const username = document.getElementById('username');
+      const password = document.getElementById('password');
+
+      form.addEventListener('submit',(e)=> {
+            e.preventDefault();
+
+            checkInputs();
+        });
+
+      function checkInputs() {
+        const usernameValue = username.value.trim();
+        const passwordValue = password.value.trim();
+
+        if(usernameValue ==='') {
+                setErrorFor(username, 'Username cannot be blank');
+            } else {
+                setSuccessFor(username);
+            }
+
+        if(passwordValue ==='') {
+                setErrorFor(password, 'Enter a password');
+            } else if(!isPassword(passwordValue)) {
+                setErrorFor(password, 'Password is incorrect');
+            } else {
+                setSuccessFor(password);
+            }
+      }
+
+      function setErrorFor(input, message) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector('small');
+
+        small.innerText = message;
+
+        formControl.className = 'form-control error';
+      }
+
+      function setSuccessFor(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control success';
+      }
+
+      function isPassword(password) {
+            return /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,15}$/.test(password);
+      }
+
+    </script>
+
+  </body>
+</html>

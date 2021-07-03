@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/f965c56d37.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/signup.css">
+  </head>
+  <body>
+
+    <div class="image"><img src="Images/Logo.jpg" width="200" height="100"></div>
+    <div class="text">God's Own Country</div>
+    <div class="intro">KERALA TOURISM</div>
+    <div class="intro1">WELCOME TO GOD'S OWN COUNTRY</div>
+
+    <div class="top">
+        <a href="index.html">Home</a>
+        <a href="where2go.html">Where to Go</a>
+        <a href="#">Sign Up</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="container">
+      <form action="login.html" class="form" id="form">
+        <h1>Create Account</h1>
+        <br>
+        <div class="form-control">
+          <label>Mobile</label>
+          <input id="mobile" type="text" placeholder="Mobile">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        
+        <div class="form-control">
+            <label>Email Id</label>
+            <input id="email" type="text" placeholder="Email Id">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        
+        <div class="form-control">
+            <label>Username</label>
+            <input id="username" type="text" placeholder="Username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        
+        <div class="form-control">
+            <label>Password</label>
+            <input id="password" type="password" placeholder="Password" onkeyup="return passwordChanged();">
+            <span id="strength"></span>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        
+        <div class="form-control">
+            <label>Repeat Password</label>
+            <input id="password2" type="password" placeholder="Repeat Password">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <br>
+        <button><a href="login.html">Sign Up</a></button>
+    </form>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="Images/BG.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG2.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG3.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG1.jpg" style="width: 100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BG4.jpg" style="width: 100%">
+      </div>
+    </div>
+
+    <footer>
+      <h3>Designed by: Amrutha Lekshmi Belraj</h3>
+    </footer>
+
+    <br>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+
+      const form = document.getElementById('form');
+      const mobile = document.getElementById('mobile');
+      const username = document.getElementById('username');
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+      const password2 = document.getElementById('password2');
+
+      form.addEventListener('submit',(e)=> {
+            e.preventDefault();
+
+            checkInputs();
+        });
+      
+      function checkInputs() {
+          const mobileValue = mobile.value.trim();
+          const usernameValue = username.value.trim();
+          const emailValue = email.value.trim();
+          const passwordValue = password.value.trim();
+          const password2Value = password2.value.trim();
+
+          if(mobileValue ==='') {
+                setErrorFor(mobile, 'Please enter a valid Mobile No.');
+            } else if(!isMobile(mobileValue)) {
+                setErrorFor(mobile, 'Mobile No. must contain 10 digits');
+            } else {
+                setSuccessFor(mobile);
+            }
+
+          if(usernameValue ==='') {
+                setErrorFor(username, 'Username cannot be blank');
+            } else {
+                setSuccessFor(username);
+            }
+
+            if(emailValue ==='') {
+                setErrorFor(email, 'Enter a valid email');
+            } else if(!isEmail(emailValue)) {
+                setErrorFor(email, 'Email is not valid');
+            } else {
+                setSuccessFor(email);
+            }
+
+            if(passwordValue ==='') {
+                setErrorFor(password, 'Enter a password');
+            } else if(!isPassword(passwordValue)) {
+                setErrorFor(password, 'Password must contain minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number');
+            } else {
+                setSuccessFor(password);
+            }
+
+            if(password2Value ==='') {
+                setErrorFor(password2, 'Confirm Password');
+            } else if(passwordValue !== password2Value) {
+                setErrorFor(password2, 'Passwords does not match');
+            } else {
+                setSuccessFor(password2);
+            }
+      }
+
+      function setErrorFor(input, message) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector('small');
+
+        small.innerText = message;
+
+        formControl.className = 'form-control error';
+      }
+
+      function setSuccessFor(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control success';
+      }
+
+      function isMobile(mobile) {
+            return /^(\d{3})[.]?[- ]?(\d{3})[.]?[- ]?(\d{4})$/.test(mobile);
+        }
+
+      function isEmail(email) {
+            return /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/.test(email);
+      }
+
+      function isPassword(password) {
+            return /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,15}$/.test(password);
+      }
+
+      function passwordChanged() {
+        var strength = document.getElementById('strength');
+        var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$", "g");
+        var mediumRegex = new RegExp("^(?=.{5,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+        var enoughRegex = new RegExp("(?=.{4,}).*", "g");
+        var pwd = document.getElementById("password");
+        if (pwd.value.length == 0) {
+            strength.innerHTML = '<span style="color:red">Password must contain minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number</span>';
+        } else if (false == enoughRegex.test(pwd.value)) {
+            strength.innerHTML = '';
+        } else if (strongRegex.test(pwd.value)) {
+            strength.innerHTML = '<span style="color:green">Strong!</span>';
+        } else if (mediumRegex.test(pwd.value)) {
+            strength.innerHTML = '<span style="color:orange">Medium!</span>';
+        } else {
+            strength.innerHTML = '<span style="color:red">Weak!</span>';
+        }
+    }
+
+    </script>
+
+  </body>
+</html>
